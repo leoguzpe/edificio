@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>edificio</title>
+    <title>Edificio con Cambio de Color de Fondo</title>
     <style>
         body {
             margin: 0;
@@ -13,11 +13,11 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            animation: changeBackground 10s infinite alternate;
+            animation: changeBackground 15s infinite alternate;
         }
 
         @keyframes changeBackground {
-            0% { background-color: #958D69; }
+         0% { background-color: #958D69; }
             20% { background-color: #8C5455; }
             40% { background-color: #3E7E8A; }
             60% { background-color: #7C96B7; }
@@ -29,7 +29,7 @@
             position: relative;
             width: 1920px;
             height: 1080px;
-            margin-bottom: 10px;
+            margin-bottom: 20px; /* Ajusta para separar el reproductor de la palabra */
         }
 
         .text {
@@ -38,28 +38,29 @@
             color: #000;
         }
 
-        /* Posicionamiento de las palabras */
-        .text1 { top: 10%; left: 10%; }
-        .text2 { top: 15%; right: 10%; }
-        .text3 { top: 25%; left: 50%; transform: translateX(-50%); }
-        .text4 { top: 35%; right: 20%; }
-        .text5 { top: 40%; left: 20%; }
-        .text6 { top: 50%; left: 60%; }
-        .text7 { top: 60%; right: 10%; }
-        .text8 { bottom: 10%; left: 10%; }
-        .text9 { bottom: 15%; right: 20%; }
-        .text10 { bottom: 20%; left: 50%; transform: translateX(-50%); }
-        .text11 { top: 25%; left: 10%; }
-        .text12 { top: 30%; right: 10%; }
-        .text13 { top: 40%; left: 50%; transform: translateX(-50%); }
-        .text14 { top: 50%; right: 20%; }
-        .text15 { top: 55%; left: 20%; }
-        .text16 { top: 60%; left: 60%; }
-        .text17 { top: 70%; right: 10%; }
-        .text18 { bottom: 20%; left: 10%; }
-        .text19 { bottom: 25%; right: 20%; }
-        .text20 { bottom: 30%; left: 50%; transform: translateX(-50%); }
-       
+        /* Aumentar el número de repeticiones */
+        .text1 { top: 5%; left: 5%; }
+        .text2 { top: 10%; right: 5%; }
+        .text3 { top: 15%; left: 50%; transform: translateX(-50%); }
+        .text4 { top: 20%; right: 15%; }
+        .text5 { top: 25%; left: 20%; }
+        .text6 { top: 30%; left: 60%; }
+        .text7 { top: 35%; right: 5%; }
+        .text8 { bottom: 35%; left: 5%; }
+        .text9 { bottom: 30%; right: 15%; }
+        .text10 { bottom: 25%; left: 50%; transform: translateX(-50%); }
+        .text11 { top: 40%; left: 5%; }
+        .text12 { top: 45%; right: 5%; }
+        .text13 { top: 50%; left: 50%; transform: translateX(-50%); }
+        .text14 { top: 55%; right: 15%; }
+        .text15 { top: 60%; left: 20%; }
+        .text16 { top: 65%; left: 60%; }
+        .text17 { top: 70%; right: 5%; }
+        .text18 { bottom: 20%; left: 5%; }
+        .text19 { bottom: 15%; right: 15%; }
+        .text20 { bottom: 10%; left: 50%; transform: translateX(-50%); }
+        .text21 { bottom: 5%; left: 5%; }
+        .text22 { bottom: 5%; right: 5%; }
     </style>
 </head>
 <body>
@@ -84,12 +85,13 @@
         <div class="text text18">edificio</div>
         <div class="text text19">edificio</div>
         <div class="text text20">edificio</div>
- 
+        <div class="text text21">edificio</div>
+        <div class="text text22">edificio</div>
     </div>
 
-    <!-- Reproductor de audio -->
-    <audio controls>
-        <source src="https://github.com/leoguzpe/edificio/raw/main/edificio%20mp3%20320/edificio%20-%20leoguzpe.mp3"  type="audio/mpeg">
+    <!-- Reproductor de audio centrado -->
+    <audio controls style="margin-top: 20px;">
+        <source src="https://github.com/leoguzpe/edificio/raw/main/edificio%20mp3%20320/edificio%20-%20leoguzpe.mp3" type="audio/mpeg">
         Tu navegador no soporta la etiqueta de audio.
     </audio>
 </body>
