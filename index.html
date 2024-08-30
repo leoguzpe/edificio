@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>edificio</title>
     <style>
-      body {
+        body {
             margin: 0;
             padding: 0;
             display: flex;
@@ -13,7 +13,16 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #7C96B7;
+            animation: changeBackground 15s infinite alternate;
+        }
+
+        @keyframes changeBackground {
+            0% { background-color: #7C96B7; }
+            20% { background-color: #ffcccc; }
+            40% { background-color: #ccffcc; }
+            60% { background-color: #ccccff; }
+            80% { background-color: #ffe4b2; }
+            100% { background-color: #7C96B7; }
         }
 
         .container {
@@ -83,4 +92,5 @@
     </audio>
 </body>
 </html>
+
 
